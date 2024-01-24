@@ -1,0 +1,213 @@
+.pakemonPage__div__img {
+    width: 100%;
+    height: 50vh;
+}
+.pakemonPage__div__conten {
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 100%;
+}
+.pakemonPage__div__bg {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 0 7px rgba(71, 70, 70, 0.062);
+}
+.pakemonPage__border{
+    aspect-ratio: 4;
+    position: relative;
+    background: var(--header-gradient);
+    
+}
+.pakemonPage__div__pokemon{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pakemonPage__div__section {
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pakemonPage__div__h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.pakemonPage__div__h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+}
+.pakemonPage__div__medidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+.pakemonPage__div__medidas__li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+    gap: 1em;
+    
+}
+.pakemonPage__div__li__span {
+    font-size: 1.3em;
+    color: #8a8787bd;
+}
+.pakemonPage__div__li__span__medidas {
+    font-weight: 800;
+}
+
+.pakemonPage__div__ability{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.pakemonPage__div__ability__ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pakemonPage__div__ability__li__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 1em;
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.637);
+    text-transform: capitalize;
+    border-radius: 0.5em;
+    font-weight: 800;
+}
+.pakemonPage__div__ability__li__span__last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 1em;
+    text-align: center;
+    background-color: rgba(165, 42, 42, 0.479);
+    text-transform: capitalize;
+    border-radius: 0.5em;
+    font-weight: 800;
+}
+.pakemonPage__div__ability__li__span-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #aaaaaa8a;
+    border-radius: 0.5em;
+    font-weight: 800;
+}
+.pakemonPage__div__ability__li__span__last-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #aaaaaa8a;
+    border-radius: 0.5em;
+    font-weight: 800;
+}
+.pakemonPage__div__ability__span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.pakemonPage__div__medidas {
+    margin-top: 4em;
+}
+.container__stats__info {
+    display: block;
+}
+.progress__bar__stats {
+    border: none;
+    width: 100%;
+    height: 1em;
+}
+::-webkit-progress-value {
+    background-color: rgba(7, 205, 245, 0.479);
+}
+::-webkit-progress-bar {
+    background: var(--header-gradient);
+}
+.progress__bar__stats {
+    animation: js 5s forwards;
+    border-radius: 4rem;
+}
+
+@keyframes js{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.header__stat__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.pakemonPage__move {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 0 0 0 7px rgba(71, 70, 70, 0.062);
+    border-radius: 1em;
+}
+.pakemonPage__move__h2 {
+    margin: 0.5em;
+    font-size: 3em;
+}
+.pakemonPage__move__div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.8em;
+}
+.pakemonPage__move__li {
+    list-style: none;
+    background-color: #aaaaaa8a;
+    border-radius: 1em;
+    height: 1.5em;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.pakemonPage__move__span {
+    border-radius: 0.5em;
+    font-size: 1em;
+    text-align: center;
+    margin: 1em;
+}

@@ -1,0 +1,51 @@
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    flex-wrap: wrap;
+}
+
+.paginacion__button__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.bx-chevrons-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.5em;
+    height: 0.5em;
+
+}
+.bx-chevrons-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.5em;
+    height: 0.5em;
+
+}
+
+.pagination__ul__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.pagination__ul__group__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagination__ul__li__button {
+    width: 3em;
+    background-color: red;
+    color: white;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
