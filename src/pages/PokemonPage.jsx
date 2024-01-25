@@ -39,7 +39,7 @@ const PokemonPage = () => {
                                     {
 
                                         pokemon?.types.map(typeInfo =>
-                                            <li  className={`types__list__item ${typeInfo.type.name}`} key={typeInfo.type.url}>
+                                            <li  className='types__list__item'  key={typeInfo.type.url}>
                                                 {typeInfo.type.name}</li>)
                                     }
                                 </ul>
