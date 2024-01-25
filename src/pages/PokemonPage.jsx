@@ -32,12 +32,30 @@ const PokemonPage = () => {
               <li className="pakemonPage__div__medidas__li"><span className="pakemonPage__div__li__span">Weight</span><span className="pakemonPage__div__li__span__medidas">{pokemon?.weight}</span></li>
               <li className="pakemonPage__div__medidas__li"><span className="pakemonPage__div__li__span">Height </span><span className="pakemonPage__div__li__span__medidas">{pokemon?.height}</span></li>
             </ul>
-            <div className="pakemonPage__div__ability">
-              <ul className="pakemonPage__div__ability__ul">
-                <li className="pakemonPage__div__ability__li"><span className="pakemonPage__div__ability__span">Type</span><span className="pakemonPage__div__ability__li__span">{pokemon?.types[0].type.name}</span><span className="pakemonPage__div__ability__li__span__last">{pokemon && pokemon?.types[1].type.name}</span></li>
-                <li className="pakemonPage__div__ability__li"><span className="pakemonPage__div__ability__span">Ability</span><span className="pakemonPage__div__ability__li__span-2">{pokemon?.abilities[0].ability.name}</span><span className="pakemonPage__div__ability__li__span__last-2">{pokemon?.abilities[1].ability.name}</span></li>
-              </ul>
-            </div>
+            <ul className='container__types__abilities'>
+                            <li className='types__abilities__item'>
+                                <span className='pokemon__type__label'>Type</span>
+                                <ul className='values__types__abilities'>
+                                    {
+
+                                        pokemon?.types.map(typeInfo =>
+                                            <li  className={`types__list__item ${typeInfo.type.name}`} key={typeInfo.type.url}>
+                                                {typeInfo.type.name}</li>)
+                                    }
+                                </ul>
+                            </li>
+                            <li className='types__abilities__item'>
+
+                                <span className='pokemon__abilities__label'>Ability</span>
+                                <ul className='values__types__abilities'>
+                                    {
+                                        pokemon?.abilities.map(abilityInfo =>
+                                            <li className="types__list__item" key={abilityInfo.ability.url}>
+                                                {abilityInfo.ability.name}</li>)
+                                    }
+                                </ul>
+                            </li>
+                        </ul>
             <div>
               <h2>Stats</h2>
                 <ul className="container__stats__info">
